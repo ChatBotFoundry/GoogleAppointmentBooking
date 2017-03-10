@@ -173,10 +173,6 @@ namespace GoogleAppointmentBooking2
 
             this.saveEventCallback(summary, description, dt);
 
-            //if (!String.IsNullOrEmpty(calendarId))
-            //{
-            //    CalendarListHelper.insertEvent(service, calendarId, summary, description, dt);
-            //}
             await context.PostAsync(string.Format(CultureInfo.CurrentCulture, "Köszönjük, hogy minket választott! Várjuk Önt ezen a napon: {0}!", dt.ToShortDateString()));
         }
 
